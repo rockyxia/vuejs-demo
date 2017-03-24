@@ -1,0 +1,85 @@
+@charset "utf-8";
+//**********************
+//* 日期:2017-01-17
+//* 说明:Sass Mixins
+//***********************/
+
+// 圆角
+@mixin border-radius($size) {
+	-webkit-border-radius: $size;
+	   -moz-border-radius: $size;
+			border-radius: $size;
+}
+
+// 阴影
+@mixin box-shadow($size) {
+	-webkit-box-shadow: $size;
+	   -moz-box-shadow: $size;
+			box-shadow: $size;
+}
+// 盒模型
+@mixin box-sizing($type) {
+	-webkit-box-sizing: $type;
+	   -moz-box-sizing: $type;
+			box-sizing: $type;
+}
+
+// 透明度
+@mixin opacity($num){
+	filter:alpha(opacity=$num);
+	-moz-opacity:$num/100;
+	opacity:$num/100;
+}
+
+// 箭头
+// arrow($width, $height, $bg, $direction)
+@mixin arrow($width, $height, $bg, $direction) {
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	border-style: solid;
+	@if $direction == t {
+		border-width: 0 $width / 2 + px $height + px $width / 2 + px;
+		border-color: transparent transparent $bg transparent;
+	}
+	@else if $direction == b {
+		border-width: $height + px $width / 2 + px 0 $width / 2 + px;
+		border-color: $bg transparent transparent transparent;
+	}
+	@else if $direction == r {
+		border-width: $height / 2 + px 0 $height / 2 + px $width + px;
+		border-color: transparent transparent transparent $bg;
+	}
+	@else if $direction == l {
+		border-width: $height / 2 + px $width + px $height / 2 + px 0;
+		border-color: transparent $bg transparent transparent;
+	}
+	@else if $direction == tl {
+		border-width: $height + px $width + px 0 0;
+		border-color: $bg transparent transparent transparent;
+	}
+	@else if $direction == tr {
+		border-width: 0 $width + px $height + px 0;
+		border-color: transparent $bg transparent transparent;
+	}
+	@else if $direction == bl {
+		border-width: 0 0 $height + px $width + px;
+		border-color: transparent transparent $bg transparent;
+	}
+	@else if $direction == br {
+		border-width: $width + px 0 0 $height + px;
+		border-color: transparent transparent transparent $bg;
+	}
+	}
+
+// 元素块化
+$inline-block-alignment: middle !default;
+@mixin inline-block($alignment: $inline-block-alignment) {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	@if $alignment and $alignment != none {
+		vertical-align: $alignment;
+	}
+}

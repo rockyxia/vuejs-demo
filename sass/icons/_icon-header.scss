@@ -1,0 +1,14 @@
+@charset "utf-8";
+/**********************
+* 日期:2016-12-06
+* 说明:icon-header.png
+***********************/
+
+//整体设置
+$icon-header-spacing: 5px; //icon间距
+$icon-header-repeat: no-repeat; //重复性设置
+$icon-header-sprite-dimensions: true; //设置尺寸
+
+@import "compass/utilities/sprites";
+@import "icon-header/*.png";
+@include all-icon-header-sprites;

@@ -1,0 +1,79 @@
+@charset "utf-8";
+/***********************
+* 日期:2017-01-17
+* 说明:本样式表内容由sass统一自动生成，
+*      自定义或修改样式请到custom.css中增加。
+***********************/
+
+//********************************
+//* sass框架目录举例说明：(每个项目应根据实际情况进行划分)
+//*   
+//* – base/                  #存放一些模板相关文件
+//* | – _base.scss              #reset样式
+//* | – _public.scss            #公用基础样式
+//* – components/            #存放一些小组件样式文件
+//* | – _button.scss            #按钮样式
+//* | – _table.scss             #表格样式
+//* – icons/                 #存放css sprite设置文件
+//* | – _icon-file.scss         #生成icon-file.png文件
+//* – layout/                #存放大的布局样式文件
+//* | – _grid.scss              #整体布局样式
+//* | – _header.scss            #头部布局样式
+//* | – _footer.scss            #底部布局样式
+//* | – _sidebar.scss           #侧边布局样式
+//* | – _forms.scss             #表单布局样式
+//* | – _pop.scss               #弹框的样式
+//* – pages/                 #存放针对一些页面写特定的样式
+//* | – _index.scss             #首页的特定样式
+//* | – _login.scss             #登录页的特定样式
+//* – themes/                #存放如果有多个主题风格的网站的主题样式
+//* | – _default.scss           #默认风格
+//* – utils/                 #存放工具和帮助之类的样式
+//* | – _mixins.scss            # Sass Mixins
+//* | – _variables.scss         # Sass Variables(变量)
+//* | – _function.scss          # Sass Functions
+//* – vendors/               #存放来自第三方的库和框架的CSS文件
+//* | – _bootstrap.scss         # Bootstrap
+//*   
+//* 以上为举例的框架结构，每个项目应根据项目需求来划分
+//********************************
+
+
+//**********************
+//* 日期:2017-01-17
+//* 说明:统一入口css样式表
+//***********************/
+
+//utils/
+// Sass Mixins
+@import "utils/_mixins.scss";
+// Sass Variables
+@import "utils/_variables.scss";
+
+
+//base/
+// reset样式
+//@import "base/_base.scss";
+//公用基础样式
+@import "base/_public.scss";
+
+
+//icons/
+// icons统一入口
+//@import "_icons.scss";
+
+//components/
+//按钮样式
+//@import "components/_button.scss";
+
+
+//layout/
+// 整体布局样式
+//@import "layout/_grid.scss";
+// 头部布局样式
+//@import "layout/_header.scss";
+
+
+//pages/
+// 演示页面样式
+@import "pages/_demo.scss";

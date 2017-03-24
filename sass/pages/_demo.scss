@@ -1,0 +1,25 @@
+@charset "utf-8";
+/**********************
+* 日期:2017-03-24
+* 说明:演示页面样式
+***********************/
+/*cardlist*/
+.cardlist {
+
+	.card {
+		float: left;
+		width: 250px;
+		padding: 15px 0;
+		border: 1px solid #dedede;
+		margin-right: 10px;
+		margin-bottom: 10px;
+
+		text-align: center;
+
+		@include box-shadow(0 0 3px #aaa);
+
+		img {
+			background: rgb(92,184,92);
+		}
+	}
+}

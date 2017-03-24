@@ -1,0 +1,14 @@
+@charset "utf-8";
+/**********************
+* 日期:2016-12-06
+* 说明:icon-file.png
+***********************/
+
+//整体设置
+$icon-file-spacing: 5px; //icon间距
+$icon-file-repeat: no-repeat; //重复性设置
+$icon-file-sprite-dimensions: false; //设置尺寸
+
+@import "compass/utilities/sprites";
+@import "icon-file/*.png";
+@include all-icon-file-sprites;

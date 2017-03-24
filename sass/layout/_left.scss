@@ -1,0 +1,50 @@
+@charset "utf-8";
+/**********************
+* 日期:2016-12-07
+* 说明:页面左侧样式
+***********************/
+.sidebar {
+	position:fixed;
+	left:0;
+	top:66px;
+	width:190px;
+	height: 100%;
+	font-size:14px;
+	background:#364053;
+
+	dt {
+		height:50px;
+		line-height:50px;
+		padding-left:20px;
+		color:#fff;
+		font-size:16px;
+		font-weight: bold;
+
+		.icon {
+			width:16px;
+			height:16px;
+			margin-right:6px;
+		}
+	}
+
+	dd {
+		line-height:43px;
+		a {
+			display:block;
+			padding-left:44px;
+			color:#fff;
+
+			@include opacity(50);
+
+			&:hover,&.current {
+				padding-left:40px;
+				border-left:4px solid #0081E6;
+				background-color: #30394B;
+				text-decoration: none;
+				font-weight: bold;
+
+				@include opacity(100);
+			}
+		}
+	}
+}

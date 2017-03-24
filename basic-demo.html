@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="skin-default">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>基础Demo - Vue.js Demo</title>
+
+	<link type="text/css" rel="stylesheet" href="static/css/common.css">
+	<script src="static/vue/vue.js"></script>
+</head>
+<body>
+<div id="app">
+	<h1>Vue.js Demo</h1>
+	<p>当前页面：基础Demo</p>
+
+	<fieldset>
+		<legend>数据驱动视图</legend>
+		<p>输出：{{ name }}</p>
+	</fieldset>
+
+	<fieldset>
+		<legend>双向绑定</legend>
+		<input v-model="number">
+		<p>数字：{{ number }}</p>
+	</fieldset>
+
+	<fieldset>
+		<legend>组件</legend>
+		<div class="cardlist clearfix">
+			<!--第1个卡片-->
+			<div class="card">
+				<img src="static/img/logo.png" alt="">
+				<h2>web技术学习</h2>
+				<p>这里是描述，很长的描述</p>
+				<button>我是按钮</button>
+			</div>
+
+			<!--第2个卡片-->
+			<div class="card">
+				<img src="static/img/logo.png" alt="">
+				<h2>web技术学习</h2>
+				<p>这里是描述，很长的描述</p>
+				<button>我是按钮</button>
+			</div>
+
+			<!--第3个卡片-->
+			<div class="card">
+				<img src="static/img/logo.png" alt="">
+				<h2>web技术学习</h2>
+				<p>这里是描述，很长的描述</p>
+				<button>我是按钮</button>
+			</div>
+		</div>
+		<div class="cardlist clearfix">
+			<card></card>
+			<card></card>
+			<card></card>
+		</div>
+	</fieldset>
+</div>
+
+<script>
+//注册一个名叫card的组件
+Vue.component('card',{
+	template:'<div class="card">'
+		+ '<img src="static/img/logo.png" alt="">'
+		+ '<h2>web技术学习</h2>'
+		+ '<p>这里是描述，很长的描述</p>'
+		+ '<button>我是按钮</button>'
+		+ '</div>'
+});
+let vm = new Vue({
+	el:"#app",
+	data:{
+		name:"Hello World",
+		number:""
+	}
+});
+</script>
+</body>
+</html>

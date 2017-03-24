@@ -1,0 +1,113 @@
+@charset "utf-8";
+/**********************
+* 日期:2017-01-17
+* 说明:公用基础样式
+***********************/
+/*--基础样式--*/
+body {
+}
+a {
+	color: #333;
+	-webkit-transition:all 0.5s;
+		transition:all 0.5s;
+}
+a:hover {
+	color:#3b74ca;
+}
+a:hover {
+	text-decoration:none;
+}
+.a-file {
+	color: #666;
+}
+.tr {
+	text-align:right;
+}
+.fs14 {
+	font-size:14px;
+}
+.fs16 {
+	font-size:16px;
+}
+
+.inline-block,
+.icon {
+	@include inline-block();
+}
+.display-block {
+	display: block;
+}
+input,textarea {
+	outline: none;
+}
+
+.clearfix:before,.clearfix:after {
+	content:"";
+	display:table;
+}
+.clearfix:after {
+	clear:both;
+	overflow:hidden;
+}
+
+//超出显示省略号
+.ellipsis {
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+//颜色定义
+.color-green {
+	color: #78c11a;
+}
+.color-gray-dark {
+	color: #333;
+}
+.color-yellow {
+	color: #f78d00;
+}
+.color-red {
+	color: #ff3e03;
+}
+
+//背景色定义
+.bg-gray {
+	background-color: #F8F7F7;
+}
+.bg-white {
+	background-color: #fff;
+}
+.bg-yellow {
+	background-color: #FCF9E4;
+}
+//定位设置
+.pos-r {
+	position: relative;
+}
+
+//全站间距定义
+.mt25 {
+	margin-top: 25px;
+}
+.mt15 {
+	margin-top: 15px;
+}
+.mt35 {
+	margin-top: 35px;
+}
+.mt5 {
+	margin-top: 5px;
+}
+.ml20 {
+	margin-left: 20px;
+}
+.ml40 {
+	margin-left: 40px;
+}
+.ml5 {
+	margin-left: 5px;
+}
+.mr10 {
+	margin-right: 10px;
+}

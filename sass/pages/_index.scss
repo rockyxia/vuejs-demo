@@ -1,0 +1,284 @@
+@charset "utf-8";
+/**********************
+* 日期:2016-12-14
+* 说明:首页页面样式
+***********************/
+.setion1 {
+	height: 521px;
+	background:url(../images/setion1bg.jpg) no-repeat center top;
+}
+.setion2 {
+	padding-bottom: 40px;
+}
+.setion3 {
+	height: 734px;
+	background:url(../images/setion3bg.jpg) no-repeat center top;
+}
+.setion4 {
+	height: 803px;
+	background:url(../images/setion4bg.png) no-repeat center top;
+}
+.setion5 {
+	padding: 90px 0 100px;
+	background-color: #F2F2F5;
+}
+
+.m-access-list {}
+.m-access-item {
+	width: 574px;
+	height: 227px;
+	background-color: #fff;
+	cursor: pointer;
+	@include box-shadow(0 0 10px #ddd);
+
+	&:hover {
+		@include box-shadow(0 0 10px #aaa);
+
+		.img .setion1-zs {
+			left:84px;
+		}
+	}
+
+	.img {
+		position: relative;
+		height: 121px;
+
+		.setion1-zs {
+			position: absolute;
+			width: 136px;
+			height: 12px;
+			top: 55px;
+			left: 79px;
+			background: url(../images/setion1-zs.png) no-repeat;
+		}
+	}
+
+	.txt {
+		text-align: center;
+		font-size: 16px;
+		color: #666;
+		line-height: 106px;
+	}
+}
+
+.m-scenarios-list {
+
+}
+.m-scenarios-item {
+	width: 300px;
+	padding: 40px 0;
+	text-align: center;
+
+	&:hover {
+		background:#f2f2f2;
+	}
+
+	.img {
+		.icon {
+			width: 96px;
+			height: 96px;
+		}
+
+		.icon-app-pc {
+			background: url(../images/app-pc.png) no-repeat;
+		}
+		.icon-app-web {
+			background: url(../images/app-web.png) no-repeat;
+		}
+		.icon-app-ios {
+			background: url(../images/app-ios.png) no-repeat;
+		}
+		.icon-app-android {
+			background: url(../images/app-android.png) no-repeat;
+		}
+	}
+
+	.txt {
+		width: 200px;
+		margin: 0 auto;
+		font-size: 14px;
+		color: #666;
+
+		p {
+			margin-top: 25px;
+		}
+
+		a {
+			color: #666;
+		}
+	}
+
+	h2 {
+		margin: 20px 0 30px;
+		font-size: 20px;
+		color: #333;
+	}
+}
+
+
+.m-capabilities-list {}
+.m-capabilities-item {
+	height: 188px;
+	background-color: #fff;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+
+	&:hover {
+		height:186px;
+		border-top:2px solid #7DA7FF;
+
+		@include box-shadow(0 0 6px #ccc);
+
+		.img {
+			//padding: 20px 0 5px;
+			img {
+				//width: 40px;
+				//height: 40px;
+			}
+		}
+
+		h2 {
+			color: #527bd0;
+		}
+
+		.txt {
+			p {
+				//display: block;
+			}
+		}
+	}
+
+	.img {
+		padding: 40px 0 20px;
+	}
+	.txt {
+		font-size: 14px;
+		color: #666;
+		padding: 0 35px;
+
+		p {
+			display: none;
+		}
+	}
+	h2 {
+		margin-bottom: 10px;
+		font-size: 20px;
+		color: #333;
+
+		-webkit-transition:all 0.5s;
+		transition:all 0.5s;
+	}
+}
+
+.m-service-list {
+	position: relative;
+	margin-top: 10px;
+
+	.service-item {
+		position: absolute;
+		width: 250px;
+		font-size: 18px;
+		line-height: 50px;
+		.icon {
+			width: 50px;
+			height: 50px;
+			margin: 0 25px;
+		}
+
+		&:hover {
+			font-weight: bold;
+			color: #4b98f6;
+		}
+	}
+	.service-1 {
+		left: 60px;
+		top: 30px;
+		text-align: right;
+	}
+	.service-2 {
+		left: 30px;
+		top: 140px;
+		text-align: right;
+	}
+	.service-3 {
+		left: 20px;
+		top: 250px;
+		text-align: right;
+	}
+	.service-4 {
+		left: 50px;
+		top: 360px;
+		text-align: right;
+	}
+	.service-5 {
+		right: 60px;
+		top: 30px;
+		text-align: left;
+	}
+	.service-6 {
+		right: 30px;
+		top: 140px;
+		text-align: left;
+	}
+	.service-7 {
+		right: 20px;
+		top: 250px;
+		text-align: left;
+	}
+	.service-8 {
+		right: 50px;
+		top: 360px;
+		text-align: left;
+	}
+}
+.m-service-img {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.m-show-list {}
+.m-show-item {
+	float: left;
+	width: 379px;
+	height: 240px;
+	margin-left: 31px;
+	background-color: #fff;
+	text-align: center;
+
+	&:hover {
+		@include box-shadow(0 0 10px #bbb);
+	}
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	.img {
+		padding: 30px 0 5px;
+		.icon {
+			width: 143px;
+			height: 96px;
+		}
+		.icon-show-1 {
+			background: url(../images/show-1.png) no-repeat;
+		}
+		.icon-show-2 {
+			background: url(../images/show-2.png) no-repeat;
+		}
+		.icon-show-3 {
+			background: url(../images/show-3.png) no-repeat;
+		}
+	}
+
+	.txt {
+		padding: 0 15px;
+		font-size: 14px;
+		color: #666;
+	}
+	h2 {
+		margin-bottom: 15px;
+		font-size: 18px;
+		color: #333;
+	}
+}

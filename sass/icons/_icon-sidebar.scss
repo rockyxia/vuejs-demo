@@ -1,0 +1,14 @@
+@charset "utf-8";
+/**********************
+* 日期:2016-12-07
+* 说明:icon-sidebar.png
+***********************/
+
+//整体设置
+$icon-sidebar-spacing: 5px; //icon间距
+$icon-sidebar-repeat: no-repeat; //重复性设置
+$icon-sidebar-sprite-dimensions: false; //设置尺寸
+
+@import "compass/utilities/sprites";
+@import "icon-sidebar/*.png";
+@include all-icon-sidebar-sprites;

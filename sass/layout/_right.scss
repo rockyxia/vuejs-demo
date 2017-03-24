@@ -1,0 +1,37 @@
+@charset "utf-8";
+/**********************
+* 日期:2016-12-07
+* 说明:页面右侧样式
+***********************/
+.mainright {
+	margin-left: 190px;
+}
+
+.main-title {
+	height: 60px;
+	padding-left: 33px;
+	padding-right: 20px;
+	border-bottom: 3px solid #E1E6EB;
+
+	.title {
+		line-height: 60px;
+		font-size: 18px;
+		font-weight: bold;
+		color: #333;
+	}
+}
+
+.vertical-line {
+	width: 5px;
+	height: 18px;
+	margin-right: 8px;
+	background-color: #0081E6;
+
+	@include border-radius(2px);
+	@include inline-block();
+}
+
+.main-search {
+	padding: 15px 20px 15px 31px;
+	background-color: #F3F5F7;
+}

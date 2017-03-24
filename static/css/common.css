@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/***********************
+* 日期:2017-01-17
+* 说明:本样式表内容由sass统一自动生成，
+*      自定义或修改样式请到custom.css中增加。
+***********************/
+/**********************
+* 日期:2017-01-17
+* 说明:公用基础样式
+***********************/
+/*--基础样式--*/
+a {
+  color: #333;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: #3b74ca;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.a-file {
+  color: #666;
+}
+
+.tr {
+  text-align: right;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.inline-block,
+.icon {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
+}
+
+.display-block {
+  display: block;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.color-green {
+  color: #78c11a;
+}
+
+.color-gray-dark {
+  color: #333;
+}
+
+.color-yellow {
+  color: #f78d00;
+}
+
+.color-red {
+  color: #ff3e03;
+}
+
+.bg-gray {
+  background-color: #F8F7F7;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-yellow {
+  background-color: #FCF9E4;
+}
+
+.pos-r {
+  position: relative;
+}
+
+.mt25 {
+  margin-top: 25px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.mt35 {
+  margin-top: 35px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.ml40 {
+  margin-left: 40px;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+/**********************
+* 日期:2017-03-24
+* 说明:演示页面样式
+***********************/
+/*cardlist*/
+.cardlist .card {
+  float: left;
+  width: 250px;
+  padding: 15px 0;
+  border: 1px solid #dedede;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 3px #aaaaaa;
+  -moz-box-shadow: 0 0 3px #aaaaaa;
+  box-shadow: 0 0 3px #aaaaaa;
+}
+.cardlist .card img {
+  background: #5cb85c;
+}

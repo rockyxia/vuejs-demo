@@ -1,0 +1,103 @@
+@charset "utf-8";
+/**********************
+* 日期:2016-12-07
+* 说明:登录页面样式
+***********************/
+
+.login-page {
+	background:url(../images/login-bg.jpg) no-repeat center center;
+	background-size: 100% 100%;
+
+	.layout-footer {
+		background:none;
+		color: #5a5a5a;
+		font-size: 12px;
+	}
+}
+
+.login-box {
+	position: absolute;
+	width: 550px;
+	left: 50%;
+	margin-left: -275px;
+	top: 50%;
+	margin-top: -320px;
+}
+.login-logo {
+	padding-bottom: 100px;
+}
+.login-form {
+	width: 550px;
+	height: 330px;
+	padding-top: 70px;
+	background-image: url(../images/login-form.png);
+
+	.inputbox {
+		position: relative;
+		width: 400px;
+		margin:0 auto;
+		padding: 10px 0;
+
+		.icon {
+			position: absolute;
+			top: 20px;
+			left: 12px;
+			z-index: 1;
+		}
+	}
+
+	.tips-error {
+		position: absolute;
+		right: -15px;
+		top: -5px;
+		padding: 5px 10px;
+		white-space:nowrap;
+		background-color: #fff;
+		border:1px solid #F49A8C;
+		color: #e9573f;
+
+		@include border-radius(4px);
+
+		.arrow-down {
+			position: absolute;
+			bottom: -6px;
+			left: 7px;
+			@include arrow(10, 6, #F49A8C, b);
+
+			em {
+				position: absolute;
+				bottom: 1px;
+				left: -5px;
+				@include arrow(10, 6, #fff, b);
+			}
+		}
+	}
+
+	.login-input {
+		width: 100%;
+		font-size: 16px;
+		border:1px solid #A5BCDA;
+		padding: 12px 12px 12px 55px;
+		box-sizing: border-box;
+
+		&:hover {
+			border:1px solid #007EE0;
+
+			@include box-shadow(0 0 3px #007ee0);
+		}
+	}
+
+	.login-button {
+		background-color: #0B89EC;
+		font-size: 22px;
+		color: #fff;
+		border:0;
+		height: 46px;
+		width: 100%;
+		cursor: pointer;
+
+		&:hover {
+			background-color: darken(#0B89EC,10%);
+		}
+	}
+}
